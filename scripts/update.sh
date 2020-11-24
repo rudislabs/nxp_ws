@@ -53,7 +53,7 @@ sudo apt-get install -y ros-$ROS_DISTRO-qt-gui ros-$ROS_DISTRO-python-qt-binding
 sudo apt-get install -y libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-bad gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly -y
 sudo apt-get install -y ros-$ROS_DISTRO-mavros ros-$ROS_DISTRO-mavros-extras ros-$ROS_DISTRO-rosbridge-server 
 sudo apt-get install -y ros-$ROS_DISTRO-teleop-twist-keyboard
-sudo apt-get install -y python3-pyqt5 xmlstarlet
+sudo apt-get install -y python3-pyqt5 xmlstarlet libimage-exiftool-perl
 
 if [ ! -f /etc/ros/rosdep/sources.list.d/20-default.list ]; then
   sudo rosdep init
