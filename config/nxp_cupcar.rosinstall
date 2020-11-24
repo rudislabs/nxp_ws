@@ -1,0 +1,14 @@
+#sim setup
+- git:
+    local-name: nxp_gazebo
+    uri: git@github.com:rudislabs/nxp_gazebo.git
+    version: main
+- git:
+    local-name: Firmware
+    uri: git@github.com:rudislabs/PX4-Autopilot.git
+    version: master
+- git:
+    local-name: mavlink_sitl_gazebo
+    uri: git@github.com:rudislabs/PX4-SITL_gazebo.git
+    version: master
+    
