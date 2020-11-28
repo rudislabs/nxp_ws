@@ -70,17 +70,8 @@ source ~/.bashrc
 if [ ! -d "/usr/local/include/GeographicLib" ] 
 then
     cd ~/Downloads
-    wget https://sourceforge.net/projects/geographiclib/files/distrib/GeographicLib-1.50.1.tar.gz
-    tar xfpz GeographicLib-1.50.1.tar.gz
-    cd GeographicLib-1.50.1
-    mkdir BUILD
-    cd BUILD
-    cmake ..
-    sudo make install
-    cd /usr/local/sbin
-    sudo ./geographiclib-get-geoids best
-    sudo ./geographiclib-get-gravity all
-    sudo ./geographiclib-get-magnetic all
+    wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+    sudo bash ./install_geographiclib_datasets.sh
     cd $ROOT
 else
     echo "GeographicLib exists at /usr/local. Will not install from source."
